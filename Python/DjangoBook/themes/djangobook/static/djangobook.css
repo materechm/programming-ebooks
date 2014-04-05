@@ -1,0 +1,101 @@
+/*** setup ***/
+body { font:12px/1.5 Verdana,sans-serif; background:#092e20; color: white;}
+#bd { background:#487858; }
+#doc { padding-top:16px; }
+
+/*** links ***/
+a img {border: none;}
+a {text-decoration: none;}
+a:hover { color:#ffe761; }
+a:link, a:visited { color:#ffc757; }
+h2 a, h3 a, h4 a { text-decoration:none !important; }
+#bd a:hover { background-color:#E0FFB8; color:#234f32; text-decoration:none; }
+#bd a:link, #bd a:visited { color:#ab5603; }
+
+/*** nav ***/
+div.nav { margin: 0; font-size: 11px; text-align: right; color: #487858;}
+#hd div.nav { margin-top: -27px; }
+#ft div.nav { margin-bottom: -18px; }
+
+#hd h1 a { color: white; }
+
+#global-nav { position:absolute; top:5px; padding:7px 0; color:#263E2B;}
+#global-nav a:link, #global-nav a:visited {color:#487858;}
+#global-nav a {padding:0 4px;}
+#global-nav a.about {padding-left:0;}
+#global-nav:hover {color:#fff;}
+#global-nav:hover a:link, #global-nav:hover a:visited  { color:#ffc757; }
+
+/*** content ***/
+#chapter-body { position: relative; }
+#yui-main div.yui-b { margin: 0 0 0 20px; background: white; color: black; padding: 0.3em 2em 1em 2em; }
+dd { margin-left:15px; }
+h1 { font-size:218%; margin-top:0.6em; margin-bottom:.4em; line-height:1.1em; }
+h1,h2,h3,h4 { margin-top:1.4em; font-family:"Trebuchet MS",sans-serif; font-weight:normal; }
+h2 { font-size:150%; margin-bottom:.6em; line-height:1.2em; color:#092e20; }
+h3 { font-size:125%; font-weight:bold; margin-bottom:.2em; color:#487858; }
+h4 { font-size:1em; font-weight:bold; margin-top:1.5em; margin-bottom:3px; }
+div.figure { text-align: center; }
+div.figure p.caption { font-size:1em; margin-top:0; margin-bottom:1.5em; color: #555;}
+hr { color:#ccc; background-color:#ccc; height:1px; border:0; }
+p, ul, dl { margin-top:.6em; margin-bottom:1em; padding-bottom: 0.1em;}
+#chapter-body img { max-width: 50em; margin-left: auto; margin-right: auto; display: block; }
+table { color:#000; margin-bottom: 1em; width: 100%; }
+table.docutils td p { margin-top:0; margin-bottom:.5em; }
+table.docutils td, table.docutils th { border-bottom:1px solid #dfdfdf; padding:4px 2px;}
+table.docutils thead th { border-bottom:2px solid #dfdfdf; text-align:left; font-weight: bold; white-space: nowrap; }
+table.docutils thead th p { margin: 0; padding: 0; }
+table.docutils { border-collapse:collapse; }
+caption { font-size:1em; font-weight:bold; margin-top:0.5em; margin-bottom:0.5em; margin-left: 2px; text-align: center; }
+blockquote { padding: 0 1em; margin: 1em 0; font:125%/1.2em "Trebuchet MS", sans-serif; color:#234f32; border-left:2px solid #94da3a; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+
+/*** one-off for chapter 7 ***/
+#chapter-body #cn0 strong { font-size:150%; margin-bottom:.6em; line-height:1.2em; color:#092e20; }
+
+/*** messages ***/
+div.newer-version, div.message {color:#092e20; background: #FAFBD1 url(images/error.png) no-repeat 10px 50%; padding:3px 2px 5px 35px; font-size:13px; margin-top:1.5em;}
+
+/*** lists ***/
+ul { padding-left:30px; }
+ol { padding-left:30px; }
+ol.arabic { list-style-type: decimal; }
+ul li { list-style-type:square; margin-bottom:.4em; }
+ol li { margin-bottom: .4em; }
+ul ul { padding-left:1.2em; }
+ul ul ul { padding-left:1em; }
+ul.linklist { padding-left:0; }
+ul.linklist li { list-style-type:none; }
+dt { font-weight:bold; margin-top:.5em; font-size:1.1em; }
+dd { margin-bottom:.8em; }
+
+/*** toctree ***/
+.toctree-wrapper ul { margin-bottom: 2em; padding-left: 0; }
+.toctree-wrapper ul li { font-size:125%; padding: .5em; margin-left: 0; line-height:1.2em; clear: right; list-style-type: none; }
+.toctree-wrapper ul li:nth-child(2n) { background-color: #E0FFB8; }
+.toctree-wrapper ul li a:hover { background-color: transparent !important; text-decoration: underline !important; }
+
+/*** code blocks ***/
+.literal { white-space:nowrap; }
+.literal, .literal-block { color:#234f32; }
+.sidebar .literal { color:white; background:transparent; font-size:11px; }
+h4 .literal { color: #234f32; font-size: 13px; }
+pre, .literal-block { font-size:medium; background:#E0FFB8; border:1px solid #94da3a; border-width:1px 0; margin: 1em 0; padding: .3em .4em; overflow: hidden; }
+dt .literal, table .literal { background:none; }
+
+/*** notes & admonitions ***/
+.note, .admonition { padding:.8em 1em .8em; margin: 1em 0; border:1px solid #94da3a; }
+.admonition-title { font-weight:bold; margin-top:0 !important; margin-bottom:0 !important;}
+.admonition .last { margin-bottom:0 !important; }
+.admonition-philosophy { padding-left:65px; background:url(http://media.djangoproject.com/img/doc/icons/docicons-philosophy.gif) .8em .8em no-repeat;}
+.note, .admonition { padding-left:65px; background:url(http://media.djangoproject.com/img/doc/icons/docicons-note.gif) .8em .8em no-repeat;}
+.admonition-behind-the-scenes { padding-left:65px; background:url(http://media.djangoproject.com/img/doc/icons/docicons-behindscenes.gif) .8em .8em no-repeat;}
+
+/*** footer ***/
+#ft { color:#487858; font-size:90%; padding-bottom: 2em; }
+
+/*** IE hacks ***/
+* pre { width: 100%; }
+* div.has-comments span { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://media.djangobook.com/images/comment-active.png", sizingMethod="scale"); }
+* #comments div.tab input { width: 95%; }

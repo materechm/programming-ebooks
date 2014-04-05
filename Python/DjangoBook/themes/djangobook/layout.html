@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>{% block title %}The Django Book{% endblock %}</title>
+    <link rel="stylesheet" href="{{ pathto("_static/reset-min.css", 1) }}" type="text/css">
+    <link rel="stylesheet" href="{{ pathto("_static/grids-min.css", 1) }}" type="text/css">
+    <link rel="stylesheet" href="{{ pathto("_static/djangobook.css", 1) }}" type="text/css">
+    {% block extrahead %}{% endblock %}
+  </head>
+  <body>
+    <div id="doc" class="yui-t7">
+      <div id="hd">
+        <h1><a href="{{ pathto("index") }}">The Django Book</a></h1>
+        <div id="global-nav">
+            <a class="about" href="{{ pathto("frontmatter") }}">About</a>
+        </div>
+        {% block hdnav %}{% endblock %}
+      </div>
+      <div id="bd">
+        <div id="yui-main">
+          <div class="yui-b">
+            {% block content %}{% endblock %}
+          </div>
+        </div>
+      </div>
+      <div id="ft">
+        {% block ftnav %}{% endblock %}
+        Copyright Adrian Holovaty, Jacob Kaplan-Moss, et al.<br>This
+        work is licensed under the <a href="{{ pathto("license") }}">GNU Free Document
+        License</a>.
+      </div>
+    </div>
+  {% block afterbody %}{% endblock %}
+  </body>
+</html>
